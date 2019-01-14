@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lottie Demo</title>
+    <script src="./lottie.js"></script>
+</head>
+<body>
+    <div id="animation"></div>
+    <script>
+        bodymovin.loadAnimation({
+            path:'./data.json',   //json file path
+            loop:true,
+            autoplay:true,
+            renderer:'canvas',  //render format，options: "html", "canvas" and "svg"
+            container:document.getElementById('animation')
+        });
+        //for more api documents, go to (https://github.com/bodymovin/bodymovin)
+    </script>
+</body>
+</html>
